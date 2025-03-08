@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+  <div class="container">
+    <img src="images/img-1.jpg" alt="purple flowers" onclick="OpenImage(0)">
+    <img src="images/img-2.jpg" alt="flowers in a vase" onclick="OpenImage(1)">
+    <img src="images/img-3.jpg" alt="flower in a vase" onclick="OpenImage(2)">
+    <img src="images/img-4.jpg" alt="multi coloured sunflowers" onclick="OpenImage(3)">
+    <img src="images/img-5.jpg" alt="flowers" onclick="OpenImage(4)">
+    <img src="images/img-6.jpg" alt="red flowers" onclick="OpenImage(5)">
+    <img src="images/img-7.jpg" alt="a woman" onclick="OpenImage(6)">
+    <img src="images/img-8.jpg" alt="flowers" onclick="OpenImage(7)">
+    <img src="images/img-9.jpg" alt="flowers" onclick="OpenImage(8)">
+  </div>
+  <!--open image--> 
+  <div id="openImage" class="displayImage">
+    <span class="close" onclick = "closeImage()">&times;</span>
+    <img class="image-content" id="img-item">
+    <!--Next and Previous buttons--> 
+  <div id="previous" onclick="prevImage()">&lt;</div>
+  <div id="next" onclick="nextImage()">&gt;</div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
